@@ -2,17 +2,66 @@
     background-color: #2348C8;
     .fundo{
         width: 100%;
+        position: relative;
 
     }
+
+.empre {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+ 
+}
+
+    .texto-secao1, p{
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        font-size: 20px;
+        font-family: montserrat;
+    }
+
+    .texto-secao1, h1{
+   
+        top: 150px;
+        left: 150px;
+        
+    }
+
 }
 
 .cabecario{
     display: flex;
-    justify-content: space-around;
-    background-color: #2348C8;
+    color: #ffff;
+    text-decoration: none;
+    justify-content: space-between;
     font-family: Inknut Antiqua;
+    position: fixed;
+    display: flex;
 
     .logo{
         width: 100px;
         }
+}
+
+.part2{
+    background-color:#1C3EB2;
+    display: flex;
+
+    
+    .qdq1{
+        background-color: #ffff;
+    }
+    .qdq2{
+        background-color: #ffff;
+    }
+    .qdq3{
+        background-color: #ffff;
+        .botao{
+            background-color: #1C3EB2;
+            border-style: none;
+            
+
+        }
+    }
 }
