@@ -1,67 +1,266 @@
-.part1{
+.paginicio{
     background-color: #2348C8;
-    .fundo{
-        width: 100%;
-        position: relative;
-
+    
+    .separador {
+        height: 2px; 
+        background-color: #ccc; 
+      }
+    
+    .linha{
+        color: #fff;
+        margin-top: 0px;
+        background-color: #2348C8;
+        display: contents;
     }
-
-.empre {
-    position: absolute;
-    top: 150px;
-    right: 10px;
- 
-}
-
-    .texto-secao1, p{
+    .links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 120px;
+            margin-right: 250px;
+            font-family: 'Montserrat';
+    
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+            list-style: none;
+            
+          }
+      
+          .Link {
+            text-decoration: none;
+            
+            color: #fff;
+            font-size: 18px;
+            padding: 0.2rem;
+            position: relative;
+      
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: #ffff;
+              border-radius: 5px;
+              bottom: -5px;
+              left: 0;
+              transform: scaleX(0);
+              transition: all 0.4s ease;
+            }
+      
+            &:hover::before {
+              transform: scaleX(1);
+            }
+          }
+    
+                &:hover {
+                    background: transparent; 
+                }
+            
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+    
+        .imagem-opaca {
+            transition: opacity 0.3s ease; 
+            width: 200px;
+        }
+        
+        .imagem-opaca:hover {
+            opacity: 0.4; 
+        }
+        
+    
+    .cabecalho {
+      display: flex;
+      justify-content: space-evenly;
+      
+    }
+    
+    
+    .historia {
+        margin-bottom: 100px;
+    }
+    
+    .historia img{
+            display: inline-block;
+            position: relative;
+            width: 1200;
+    }
+    
+    .NM {
+            position: absolute;
+            top: 900px;
+            left: 50px;
+            line-height: 25px;
+    }
+    
+    .QS{
+            position: absolute;
+            right: 50px;
+            top: 500px;
+            line-height: 25px;
+    }}
+    
+    
+    
+    
+    .part1{
+        background-color: #2348C8;
+        .fundo{
+            width: 100%;
+            position: relative;
+    
+        }
+    
+    .empre {
         position: absolute;
-        top: 100px;
-        left: 10px;
-        font-size: 20px;
-        font-family: montserrat;
-    }
-
-    .texto-secao1, h1{
-   
-        top: 150px;
-        left: 150px;
+        top: 170px;
+        right: -1px;
+        width: 900px;
+        margin-right: 32px;
+        transition: all 0.3s;
+        }
+     
+    
+    
+        .texto-secao1, p{
+            
+            color: #fff;
+            position: absolute;
+            top: 160px;
+            left: 19px;
+            font-size: 25px;
+            font-family: montserrat;
+        }
+    
+    
+        .texto-secao1, h1{
+       
+            top: 170px;
+            left: 120px;
+            
+        }
+        .separador2 {
+            height: 3px; 
+            background-color: #a8a0a0; 
+          }
         
     }
-
-}
-
-.cabecario{
-    display: flex;
-    color: #ffff;
-    text-decoration: none;
-    justify-content: space-between;
-    font-family: Inknut Antiqua;
-    position: fixed;
-    display: flex;
-
-    .logo{
-        width: 100px;
-        }
-}
-
-.part2{
-    background-color:#1C3EB2;
-    display: flex;
-
     
-    .qdq1{
-        background-color: #ffff;
-    }
-    .qdq2{
-        background-color: #ffff;
-    }
-    .qdq3{
-        background-color: #ffff;
-        .botao{
-            background-color: #1C3EB2;
-            border-style: none;
-            
-
+    .part3 {
+        display: flex;
+        align-items: flex-start;
+        background: linear-gradient(to bottom, #ffffff, #002a8c); 
+        height: 100vh; 
+          
+         
+        .ft {
+          display: flex;
+          align-items: flex-start;
+          margin-right: 20px; 
         }
-    }
-}
+      
+        .equipe {
+          width: 700px;
+        }
+      
+        .part3-1 {
+          display: flex;
+          flex-direction: column; 
+          justify-content: flex-start;
+          align-items: center; 
+          width: 590px;
+          height: 690px;
+          margin-left: 90px;
+        }
+      
+        .missao {
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
+      
+          h3 {
+            margin-top: 70px;
+            font-size: 28px;
+            font-family: 'Montserrat';
+            text-align: center;            
+          }
+      
+          .linha {
+            width: 100%; 
+            height: 2px; 
+            background-color: #000; 
+            margin: 10px 0; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+          }
+      
+          .p {
+            font-size: 23px;
+            font-family: 'Montserrat';
+            text-align: center; 
+          }
+        }
+      }
+    
+    
+      .page {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        background-color: #002a8c; 
+        padding: 70px;
+      }
+      
+      .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        text-align: center;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        .card-image {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 10px;
+          border-radius: 50%;
+        }
+      
+        h3 {
+          font-size: 1.5em;
+          color: #333;
+          margin-bottom: 15px;
+        }
+      
+        p {
+          font-size: 0.9em;
+          color: #555;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+      
+        .card-button {
+          background-color: #6c5ce7;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 0.9em;
+          margin-top: auto;
+      
+          &:hover {
+            background-color: #5b4dc1;
+          }
+        }
+      }
+      
+    
+    
