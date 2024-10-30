@@ -87,13 +87,23 @@ export default function App(){
           <div className='final'>
           
           <div className='imge'>
-            <img className='imglo' src="/assets/images/il.png" alt="" />
-            <h2>Fale Conosco</h2>
-            <h2>____________</h2>
-          </div>
+            <img className='imglo' src="/assets/images/canva2.png" alt="" />    </div>
+            <h2 className='fale'>Fale Conosco</h2>
+            <h2 className='falelinha'>____________</h2>
+
+            <a href="">
+              <img  src="/assets/images/img11.png" alt="" />
+            </a>
+
           </div>
 
+          
+
+
+         
+
     </div>
+    
 
         
 

@@ -268,8 +268,47 @@
             width: 10px;
            }
         }
+
+        
      
       }
-      
+      .final{
+        background-color: #02001F;
+
+        .imglo{
+          margin-top: 30px;
+          margin-left: 40px;
+          width: 200px;
+          background-color: #fff;
+          border-radius: 100px;
+          .image-fade {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+          }
+          
+          .image-fade.visible {
+            opacity: 1;
+          }
+          
+        }
+
+        .fale{
+          font-size: 30px;
+          color: #fff;
+          font-family: Montserrat;
+          margin-top: 2px;
+          margin-bottom: 0px;
+          margin-left:40px;
+        }
+
+        .falelinha{
+          position: relative;
+          color: #fff;
+          font-size: 40px;
+          top: -67px;
+          left: 33px;
+        }
+      }
+  
     
     
