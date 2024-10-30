@@ -91,9 +91,18 @@ export default function App(){
             <h2 className='fale'>Fale Conosco</h2>
             <h2 className='falelinha'>____________</h2>
 
+            <div className='redes'>
             <a href="">
-              <img  src="/assets/images/img11.png" alt="" />
+              <img className='w' src="/assets/images/whats.png" alt="" />
             </a>
+            <a href="">
+              <img className='f' src="/assets/images/face.png" alt="" />
+            </a>
+            <a href="">
+              <img className='t' src="/assets/images/twiter.png" alt="" />
+            </a>
+            </div>
+           
 
           </div>
 
