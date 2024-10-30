@@ -66,7 +66,8 @@
     
         .imagem-opaca {
             transition: opacity 0.3s ease; 
-            width: 200px;
+            width: 200px; 
+            padding: 10px;
         }
         
         .imagem-opaca:hover {
@@ -154,7 +155,7 @@
     .part3 {
         display: flex;
         align-items: flex-start;
-        background: linear-gradient(to bottom, #ffffff, #002a8c); 
+        background: linear-gradient(to bottom, #ffffff, #6984c3); 
         height: 100vh; 
           
          
@@ -165,7 +166,7 @@
         }
       
         .equipe {
-          width: 700px;
+          width: 730px;
         }
       
         .part3-1 {
@@ -260,6 +261,14 @@
             background-color: #5b4dc1;
           }
         }
+        
+        .imge{
+          background-color: #02001F;
+           .imglo{
+            width: 10px;
+           }
+        }
+     
       }
       
     

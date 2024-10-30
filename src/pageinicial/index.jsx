@@ -84,7 +84,16 @@ export default function App(){
       </div>
     </div>
           
-            </div>
+          <div className='final'>
+          
+          <div className='imge'>
+            <img className='imglo' src="/assets/images/il.png" alt="" />
+            <h2>Fale Conosco</h2>
+            <h2>____________</h2>
+          </div>
+          </div>
+
+    </div>
 
         
 
