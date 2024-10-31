@@ -31,6 +31,8 @@ export default function App(){
                     <div className='texto-secao1'>
                         <h1 className='h1'>Inovação á sua Empresa</h1>
                         <p className='v'>A Velox Byte é uma empresa de <br /> tecnologia e informática comprometida <br /> em oferecer soluções inovadoras e <br /> eficientes para o mundo digital.</p>
+                      
+                      
                     </div>
                 
                 
@@ -84,37 +86,52 @@ export default function App(){
       </div>
     </div>
           
-          <div className='final'>
-          
-          <div className='imge'>
-            <img className='imglo' src="/assets/images/canva2.png" alt="" />    </div>
-            <h2 className='fale'>Fale Conosco</h2>
-            <h2 className='falelinha'>____________</h2>
+    <div className="final">
+  <div className="left-section">
+ 
+    <div className="imge">
+      <img className="imglo" src="/assets/images/canva2.png" alt="" />
+    </div>
+    <a href="" style={{ textDecoration: 'none' }}>
+      <h2 className="fale">Fale Conosco</h2>
+    </a>
+    <div className="line-separator"></div>
+    <div className="redes">
+      <a href="https://www.whatsapp.com/?lang=pt_BR">
+        <img className="icon" src="/assets/images/whats.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.facebook.com/?locale=pt_BR">
+        <img className="icon" src="/assets/images/face.png" alt="Facebook" />
+      </a>
+      <a href="https://www.facebook.com/?locale=pt_BR">
+        <img className="icon" src="/assets/images/twiter.png" alt="Twitter" />
+      </a>
+    </div>
+  </div>
 
-            <div className='redes'>
-            <a href="">
-              <img className='w' src="/assets/images/whats.png" alt="" />
-            </a>
-            <a href="">
-              <img className='f' src="/assets/images/face.png" alt="" />
-            </a>
-            <a href="">
-              <img className='t' src="/assets/images/twiter.png" alt="" />
-            </a>
-            </div>
-           
+  <div className="right-section">
+    <div className="endereco">
+      <h2>Contato</h2>
+      <p>Telefone Comercial: (11)93940-2551</p>
+      <p>Email Comercial: veloxbyte@gmail.com</p>
+      <p>Rua Sátelite Dioneia, 171 - Jd.Casa Grande</p>
+      <p>Cep: 04858-480</p>
+    </div>
 
-          </div>
-
-          
-
-
-         
-
+    <div className="atendimento">
+      <h2>Atendimento</h2>
+      <p>Segunda a Sexta, das 08h às 18h</p>
+    </div>
+  </div>
+</div>
+<div className='mapBox'>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.189356950853!2d-46.70332172578109!3d-23.704931066880288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb7e753c599%3A0x6f9ca28fe0093bd2!2sAut%C3%B3dromo%20de%20Interlagos%20-%20Port%C3%A3o%208%20%2F%20Gate%208!5e0!3m2!1spt-BR!2sbr!4v1728855956689!5m2!1spt-BR!2sbr"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
     </div>
     
-
-        
-
     )
 }
+
+
+
+

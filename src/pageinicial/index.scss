@@ -1,6 +1,8 @@
 .paginicio{
     background-color: #2348C8;
     
+  
+ 
     .separador {
         height: 2px; 
         background-color: #ccc; 
@@ -122,8 +124,14 @@
         top: 170px;
         right: -1px;
         width: 900px;
-        margin-right: 32px;
+        margin-right: -80px;
         transition: all 0.3s;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      
+              &:hover {
+                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+                opacity: 0.8; // Reduz a opacidade para 80% no hover
+              }
         }
      
     
@@ -272,61 +280,123 @@
         
      
       }
-      .final{
+      .final {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
         background-color: #02001F;
-
-        .imglo{
-          margin-top: 30px;
-          margin-left: 40px;
-          width: 200px;
-          background-color: #fff;
-          border-radius: 100px;
-          .image-fade {
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-          }
-          
-          .image-fade.visible {
-            opacity: 1;
-          }
-          
-        }
-
-        .fale{
-          font-size: 30px;
-          color: #fff;
-          font-family: Montserrat;
-          margin-top: 2px;
-          margin-bottom: 0px;
-          margin-left:40px;
-        }
-
-        .falelinha{
-          position: relative;
-          color: #fff;
-          font-size: 40px;
-          top: -67px;
-          left: 33px;
-        }
-
-        .redes{
-        
-          position: relative;
+        padding: 20px;
+        color: #fff;
+        font-family: Montserrat;
+      
+        .left-section {
           display: flex;
-          top: -97px;
-     
-          .w{
-            width: 30px;
+          flex-direction: column;
+          align-items: center;
+      
+          .imge {
+            // Animação de fade-in e scale ao carregar
+            opacity: 0;
+            transform: scale(0.9); // Inicia levemente menor
+            animation: fadeInScale 0.8s ease forwards; // Executa a animação ao carregar
+      
+            .imglo {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              background-color: #fff;
+              transition: transform 0.3s ease, opacity 0.3s ease;
+      
+              &:hover {
+                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+                opacity: 0.8; // Reduz a opacidade para 80% no hover
+              }
+            }
           }
-          .f{
-            width: 30px;
-          } 
-          .t{
-            width: 30px;
+      
+          .fale {
+            font-size: 24px;
+            font-family: Montserrat, sans-serif;
+            margin: 10px 0;
+            text-align: center;
+            color: #fff;
           }
-        
+      
+          .line-separator {
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            margin: 5px 0 15px 0;
+          }
+      
+          .redes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+      
+            .icon {
+              width: 40px;
+              height: 40px;
+              transition: transform 0.3s ease, opacity 0.3s ease;
+      
+              &:hover {
+                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+                opacity: 0.8; // Reduz a opacidade para 80% no hover
+              }
+            }
+          }
+        }
+      
+        .right-section {
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+      
+          .endereco,
+          .atendimento {
+            
+            
+            
+            h2 {
+              font-size: 18px;
+
+              margin-bottom: 8px;
+            }
+      
+            p {
+              font-size: 14px;
+              padding: 5px;
+              line-height: 1.6;
+              margin: 0;
+            }
+          }
         }
       }
-  
-    
-    
+      
+      // Definição da animação de fade-in com scale para a imagem
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: scale(0.9); // Começa menor e invisível
+        }
+        to {
+          opacity: 1;
+          transform: scale(1); // Atinge o tamanho original
+        }
+      }
+      .mapBox {
+	position: relative;
+	width: 80%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 700px;
+	margin-top: -300px;
+  margin-bottom: 0px;
+  padding-bottom: 0%;
+   
+}
+
+
+      
