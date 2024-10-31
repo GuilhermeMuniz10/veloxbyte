@@ -351,6 +351,8 @@
           display: flex;
           justify-content: space-between;
           gap: 30px;
+
+          
       
           .endereco,
           .atendimento {
@@ -385,18 +387,21 @@
         }
       }
       .mapBox {
-	position: relative;
-	width: 80%;
-	height: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	left: 700px;
-	margin-top: -300px;
-  margin-bottom: 0px;
-  padding-bottom: 0%;
-   
-}
+        // position: relative;
+        // width: 80%;
+        // height: 400px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // left: 700px;
+        // margin-top: -300px;
+        display: flex;
+        justify-content: end;
+        top: 2274 px;
+        left: 1150px;
+        position: absolute;
+      }
+
 
 
       
