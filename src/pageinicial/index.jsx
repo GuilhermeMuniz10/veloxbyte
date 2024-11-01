@@ -97,13 +97,13 @@ export default function App(){
     </a>
     <div className="line-separator"></div>
     <div className="redes">
-      <a href="https://www.whatsapp.com/?lang=pt_BR">
+      <a href="https://w.app/Veloxbytetec">
         <img className="icon" src="/assets/images/whats.png" alt="WhatsApp" />
       </a>
-      <a href="https://www.facebook.com/?locale=pt_BR">
+      <a href="https://www.facebook.com/profile.php?id=61568246933574&sk=about_work_and_education">
         <img className="icon" src="/assets/images/face.png" alt="Facebook" />
       </a>
-      <a href="https://www.facebook.com/?locale=pt_BR">
+      <a href="https://www.instagram.com/velox.byte/">
         <img className="icon" src="/assets/images/twiter.png" alt="Twitter" />
       </a>
     </div>
