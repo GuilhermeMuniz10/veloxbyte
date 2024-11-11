@@ -1,407 +1,550 @@
-.paginicio{
+.paginicio {
+  background-color: #2348C8;
+
+
+
+  .separador {
+    height: 2px;
+    background-color: #ccc;
+  }
+
+  .linha {
+    color: #fff;
+    margin-top: 0px;
     background-color: #2348C8;
-    
-  
- 
-    .separador {
-        height: 2px; 
-        background-color: #ccc; 
-      }
-    
-    .linha{
-        color: #fff;
-        margin-top: 0px;
-        background-color: #2348C8;
-        display: contents;
+    display: contents;
+  }
+
+  /* Make the navigation bar fixed at the top */
+  .links {
+    padding: 0px 130px 0px 90px;
+    position: fixed;
+    /* Fixes the navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    z-index: 1000;
+    /* Ensure navbar is above other content */
+    background-color: #00000041;
+    /* Make the background transparent initially */
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    list-style: none;
+
+
+  }
+
+  .Link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.2rem;
+    position: relative;
+  }
+
+  .Link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+  }
+
+  .Link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .imagem-opaca {
+    transition: opacity 0.3s ease;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .imagem-opaca:hover {
+    opacity: 0.4;
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Add a class for when the navbar should become opaque on scroll */
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent dark background when scrolled */
+  }
+
+
+
+
+  .historia {
+    margin-bottom: 100px;
+  }
+
+  .historia img {
+    display: inline-block;
+    position: relative;
+    width: 1200;
+  }
+
+  .NM {
+    position: absolute;
+    top: 900px;
+    left: 50px;
+    line-height: 25px;
+  }
+
+  .QS {
+    position: absolute;
+    right: 50px;
+    top: 500px;
+    line-height: 25px;
+  }
+}
+
+
+
+
+.part1 {
+  background-color: #2348C8;
+
+  .fundo {
+    width: 100%;
+    position: relative;
+
+  }
+
+  .empre {
+    position: absolute;
+    top: 170px;
+    right: -1px;
+    width: 900px;
+    margin-right: -80px;
+    transition: all 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+      opacity: 0.8; // Reduz a opacidade para 80% no hover
+
     }
-    .links {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: 120px;
-            margin-right: 250px;
-            font-family: 'Montserrat';
-    
-          ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6rem;
-            list-style: none;
-            
-          }
-      
-          .Link {
-            text-decoration: none;
-            
-            color: #fff;
-            font-size: 18px;
-            padding: 0.2rem;
-            position: relative;
-      
-            &::before {
-              content: "";
-              position: absolute;
-              width: 100%;
-              height: 2px;
-              background-color: #ffff;
-              border-radius: 5px;
-              bottom: -5px;
-              left: 0;
-              transform: scaleX(0);
-              transition: all 0.4s ease;
-            }
-      
-            &:hover::before {
-              transform: scaleX(1);
-            }
-          }
-    
-                &:hover {
-                    background: transparent; 
-                }
-            
-                &:hover::after {
-                    transform: scaleX(1);
-                }
-            }
-    
-        .imagem-opaca {
-            transition: opacity 0.3s ease; 
-            width: 200px; 
-            padding: 10px;
-        }
-        
-        .imagem-opaca:hover {
-            opacity: 0.4; 
-        }
-        
-    
-    .cabecalho {
-      display: flex;
-      justify-content: space-evenly;
-      
+  }
+
+  .texto-secao1,
+  p {
+
+    color: #fff;
+    position: absolute;
+    top: 160px;
+    left: 19px;
+    font-size: 25px;
+    font-family: "Montserrat";
+
+  }
+
+  .texto-secao1,
+  h1 {
+
+    top: 170px;
+    left: 120px;
+
+  }
+
+  .separador2 {
+    height: 3px;
+    background-color: #a8a0a0;
+  }
+
+}
+
+.part3 {
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, #ffffff, #6984c3);
+  height: 65.1vh;
+
+
+  .ft {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+
+  .equipe {
+    width: 730px;
+  }
+
+  .part3-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 590px;
+    height: 690px;
+    margin-left: 90px;
+  }
+
+  .missao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin-top: 70px;
+      font-size: 28px;
+      font-family: 'Montserrat';
+      text-align: center;
     }
-    
-    
-    .historia {
-        margin-bottom: 100px;
+
+    .linha {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      margin: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
-    
-    .historia img{
-            display: inline-block;
-            position: relative;
-            width: 1200;
+
+    .p {
+      font-size: 23px;
+      font-family: 'Montserrat';
+      text-align: center;
     }
-    
-    .NM {
-            position: absolute;
-            top: 900px;
-            left: 50px;
-            line-height: 25px;
+  }
+}
+
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  background-color: #002a8c;
+  padding: 70px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .card-button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: auto;
+
+    &:hover {
+      background-color: #5b4dc1;
     }
-    
-    .QS{
-            position: absolute;
-            right: 50px;
-            top: 500px;
-            line-height: 25px;
-    }}
-    
-    
-    
-    
-    .part1{
-        background-color: #2348C8;
-        .fundo{
-            width: 100%;
-            position: relative;
-    
-        }
-    
-    .empre {
-        position: absolute;
-        top: 170px;
-        right: -1px;
-        width: 900px;
-        margin-right: -80px;
-        transition: all 0.3s;
+  }
+
+  .imge {
+    background-color: #02001F;
+
+    .imglo {
+      width: 10px;
+    }
+  }
+
+
+
+}
+
+.final {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #02001F;
+  padding: 20px;
+  color: #fff;
+  font-family: Montserrat;
+  position: relative;
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imge {
+      // Animação de fade-in e scale ao carregar
+      opacity: 0;
+      transform: scale(0.9); // Inicia levemente menor
+      animation: fadeInScale 0.8s ease forwards; // Executa a animação ao carregar
+
+      .imglo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #fff;
         transition: transform 0.3s ease, opacity 0.3s ease;
-      
-              &:hover {
-                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
-                opacity: 0.8; // Reduz a opacidade para 80% no hover
-              }
+
+        &:hover {
+          transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+          opacity: 0.8; // Reduz a opacidade para 80% no hover
         }
-     
-    
-    
-        .texto-secao1, p{
-            
-            color: #fff;
-            position: absolute;
-            top: 160px;
-            left: 19px;
-            font-size: 25px;
-            font-family: montserrat;
-        }
-    
-    
-        .texto-secao1, h1{
-       
-            top: 170px;
-            left: 120px;
-            
-        }
-        .separador2 {
-            height: 3px; 
-            background-color: #a8a0a0; 
-          }
-        
+      }
     }
-    
-    .part3 {
-        display: flex;
-        align-items: flex-start;
-        background: linear-gradient(to bottom, #ffffff, #6984c3); 
-        height: 100vh; 
-          
-         
-        .ft {
-          display: flex;
-          align-items: flex-start;
-          margin-right: 20px; 
-        }
-      
-        .equipe {
-          width: 730px;
-        }
-      
-        .part3-1 {
-          display: flex;
-          flex-direction: column; 
-          justify-content: flex-start;
-          align-items: center; 
-          width: 590px;
-          height: 690px;
-          margin-left: 90px;
-        }
-      
-        .missao {
-          display: flex;
-          flex-direction: column;
-          align-items: center; 
-      
-          h3 {
-            margin-top: 70px;
-            font-size: 28px;
-            font-family: 'Montserrat';
-            text-align: center;            
-          }
-      
-          .linha {
-            width: 100%; 
-            height: 2px; 
-            background-color: #000; 
-            margin: 10px 0; 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-          }
-      
-          .p {
-            font-size: 23px;
-            font-family: 'Montserrat';
-            text-align: center; 
-          }
-        }
-      }
-    
-    
-      .page {
-        display: flex;
-        justify-content: center;
-        gap: 80px;
-        background-color: #002a8c; 
-        padding: 70px;
-      }
-      
-      .card {
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 30px;
-        text-align: center;
-        width: 240px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      
-        .card-image {
-          width: 100px;
-          height: 100px;
-          margin-bottom: 10px;
-          border-radius: 50%;
-        }
-      
-        h3 {
-          font-size: 1.5em;
-          color: #333;
-          margin-bottom: 15px;
-        }
-      
-        p {
-          font-size: 0.9em;
-          color: #555;
-          line-height: 1.6;
-          margin-bottom: 20px;
-        }
-      
-        .card-button {
-          background-color: #6c5ce7;
-          color: white;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 0.9em;
-          margin-top: auto;
-      
-          &:hover {
-            background-color: #5b4dc1;
-          }
-        }
-        
-        .imge{
-          background-color: #02001F;
-           .imglo{
-            width: 10px;
-           }
-        }
 
-        
-     
-      }
-      .final {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        background-color: #02001F;
-        padding: 20px;
-        color: #fff;
-        font-family: Montserrat;
-      
-        .left-section {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      
-          .imge {
-            // Animação de fade-in e scale ao carregar
-            opacity: 0;
-            transform: scale(0.9); // Inicia levemente menor
-            animation: fadeInScale 0.8s ease forwards; // Executa a animação ao carregar
-      
-            .imglo {
-              width: 150px;
-              height: 150px;
-              border-radius: 50%;
-              background-color: #fff;
-              transition: transform 0.3s ease, opacity 0.3s ease;
-      
-              &:hover {
-                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
-                opacity: 0.8; // Reduz a opacidade para 80% no hover
-              }
-            }
-          }
-      
-          .fale {
-            font-size: 24px;
-            font-family: Montserrat, sans-serif;
-            margin: 10px 0;
-            text-align: center;
-            color: #fff;
-          }
-      
-          .line-separator {
-            width: 50%;
-            height: 2px;
-            background-color: #fff;
-            margin: 5px 0 15px 0;
-          }
-      
-          .redes {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-      
-            .icon {
-              width: 40px;
-              height: 40px;
-              transition: transform 0.3s ease, opacity 0.3s ease;
-      
-              &:hover {
-                transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
-                opacity: 0.8; // Reduz a opacidade para 80% no hover
-              }
-            }
-          }
-        }
-      
-        .right-section {
-          display: flex;
-          justify-content: space-between;
-          gap: 30px;
+    .fale {
+      font-size: 24px;
+      font-family: Montserrat, sans-serif;
+      margin: 10px 0;
+      text-align: center;
+      color: #fff;
+    }
 
-          
-      
-          .endereco,
-          .atendimento {
-            
-            
-            
-            h2 {
-              font-size: 18px;
+    .line-separator {
+      width: 50%;
+      height: 2px;
+      background-color: #fff;
+      margin: 5px 0 15px 0;
+    }
 
-              margin-bottom: 8px;
-            }
-      
-            p {
-              font-size: 14px;
-              padding: 5px;
-              line-height: 1.6;
-              margin: 0;
-            }
-          }
+    .redes {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1); // Aumenta o tamanho em 10% ao passar o mouse
+          opacity: 0.8; // Reduz a opacidade para 80% no hover
         }
       }
-      
-      // Definição da animação de fade-in com scale para a imagem
-      @keyframes fadeInScale {
-        from {
-          opacity: 0;
-          transform: scale(0.9); // Começa menor e invisível
-        }
-        to {
-          opacity: 1;
-          transform: scale(1); // Atinge o tamanho original
-        }
+    }
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .endereco,
+    .atendimento {
+
+      h2 {
+        font-size: 18px;
+
+        margin-bottom: 8px;
       }
-      .mapBox {
-        // position: relative;
-        // width: 80%;
-        // height: 400px;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // left: 700px;
-        // margin-top: -300px;
-        display: flex;
-        justify-content: end;
-        top: 2274 px;
-        left: 1150px;
-        position: absolute;
+
+      p {
+        font-size: 14px;
+        padding: 5px;
+        line-height: 1.6;
+        margin: 0;
       }
+    }
+  }
+}
+
+.paginicio {
+  background-color: #2348C8;
 
 
 
-      
+  .separador {
+    height: 2px;
+    background-color: #ccc;
+  }
+
+  .linha {
+    color: #fff;
+    margin-top: 0px;
+    background-color: #2348C8;
+    display: contents;
+  }
+
+  /* Make the navigation bar fixed at the top */
+  .links {
+    padding: 0px 130px 0px 90px;
+    position: fixed;
+    /* Fixes the navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    z-index: 1000;
+    /* Ensure navbar is above other content */
+    background-color: #00000041;
+    /* Make the background transparent initially */
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    list-style: none;
+
+
+  }
+
+  .Link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.2rem;
+    position: relative;
+  }
+
+  .Link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+  }
+
+  .Link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .imagem-opaca {
+    transition: opacity 0.3s ease;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .imagem-opaca:hover {
+    opacity: 0.4;
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* Add a class for when the navbar should become opaque on scroll */
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent dark background when scrolled */
+  }
+
+
+
+
+  .historia {
+    margin-bottom: 100px;
+  }
+
+  .historia img {
+    display: inline-block;
+    position: relative;
+    width: 1200;
+  }
+
+  .NM {
+    position: absolute;
+    top: 900px;
+    left: 50px;
+    line-height: 25px;
+  }
+
+  .QS {
+    position: absolute;
+    right: 50px;
+    top: 500px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1350px){
+  .part1{
+      .empre{
+      position: relative;
+    }
+  }
+
+  .page {
+    flex-direction: column;
+  }
+
+  .part3{
+    .equipe{
+      display: none;
+    }
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9); 
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+.mapBox {
+  // position: relative;
+  // width: 80%;
+  // height: 400px;
+  display: flex;
+  justify-content: end;
+  // align-items: center;
+  // left: 700px;
+  top: 195%;
+  right: 9.5%;
+  position: absolute;
+}
+
