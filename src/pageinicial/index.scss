@@ -227,6 +227,91 @@
       text-align: center;
     }
   }
+
+  @media (max-width: 1024px) {
+    .part3 {
+      height: auto; /* Ajusta a altura para conteúdo dinâmico */
+    }
+  
+    .part3 .ft {
+      width: 600px; /* Reduz a largura */
+      margin-right: 10px;
+    }
+  
+    .part3 .equipe {
+      width: 600px; /* Reduz a largura */
+    }
+  
+    .part3 .part3-1 {
+      width: 500px; /* Reduz largura */
+      height: auto; /* Permite altura fluida */
+      margin-left: 50px; /* Ajusta margem */
+    }
+  
+    .part3 .missao h3 {
+      font-size: 24px; /* Reduz tamanho da fonte */
+      margin-top: 50px;
+    }
+  
+    .part3 .missao .p {
+      font-size: 20px; /* Reduz tamanho da fonte */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .part3 {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .part3 .ft {
+      width: 100%; /* Usa toda a largura disponível */
+      margin-right: 0;
+    }
+  
+    .part3 .equipe {
+      width: 100%;
+    }
+  
+    .part3 .part3-1 {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .part3 .missao h3 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  
+    .part3 .missao .p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .part3 .ft {
+      width: 300px; /* Ajusta para telas menores */
+    }
+
+    .part3-1 h3{
+      font-size: 13px;
+    }
+  
+    .part3 .equipe {
+      width: 200px;
+    }
+  
+    .part3 .missao h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  
+    .part3-1 .p {
+      font-size: 11px;
+      width: 200px;
+    }
+  }
 }
 
 
@@ -293,8 +378,50 @@
   }
 
 
+  @media (max-width: 768px) {
+    .page {
+      flex-direction: column; /* Alinha os cards um abaixo do outro */
+      align-items: center; /* Centraliza no meio */
+      gap: 30px; /* Reduz o espaço entre os cards */
+    }
+  
+    .card {
+      width: 80%; /* Torna os cards mais largos em telas pequenas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      margin-right: 50px !important;
+      width: 95%; /* Ajusta a largura para quase preencher a tela */
+      padding: 20px; /* Reduz o padding para economizar espaço */
+    }
+  
+    .card h3 {
+      font-size: 1.2em; /* Reduz o tamanho da fonte */
+    }
+  
+    .card p {
+      font-size: 0.8em; /* Reduz o tamanho da fonte */
+    }
+  
+    .card .card-image {
+      width: 80px; /* Diminui a imagem */
+      height: 80px;
+    }
+
+    .page {
+      margin-left: -60px !important; /* Move mais para a esquerda em telas muito pequenas */
+    }
+  }
+
 
 }
+
+
+
+
+
 
 .final {
   display: flex;
@@ -550,3 +677,47 @@
   position: absolute;
 }
 
+@media (max-width: 768px) {
+  .final {
+    flex-direction: column; /* Empilha as seções verticalmente */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .final .left-section,
+  .final .right-section {
+    width: 90%; /* Reduz a largura em telas pequenas */
+    margin-bottom: 15px;
+  }
+
+  .final .left-section .imge .imglo {
+    width: 100px; /* Diminui o tamanho da imagem */
+    height: 100px;
+  }
+
+  .final .right-section .endereco h2,
+  .final .right-section .atendimento h2 {
+    font-size: 16px; /* Ajusta o tamanho das fontes */
+  }
+
+  .final .right-section .endereco p,
+  .final .right-section .atendimento p {
+    font-size: 12px; /* Ajusta o tamanho das fontes */
+  }
+}
+
+
+
+/* Ajuste final para telas muito pequenas */
+@media (max-width: 480px) {
+  .final {
+    padding: 20px;
+  }
+
+  .final .left-section .imge .imglo {
+    width: 80px; /* Diminui mais a imagem */
+    height: 80px;
+  }
+
+}

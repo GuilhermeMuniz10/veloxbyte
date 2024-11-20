@@ -29,10 +29,9 @@ export default function App() {
 
           <ul>
 
-          <li><a href="#" className='Link' onClick={(e) => handleSmoothScroll(e, 'Quw')}>Quem Somos</a></li>
-            <li><a href="#" className='Link'>Premiações</a></li>
-            <li><a href="#" className='Link'>Projetos</a></li>
-            <li><a href="#" className='Link'>Localização</a></li>
+          <li><a href="#" className='Link' onClick={(e) => handleSmoothScroll(e, 'QS')}>Quem Somos</a></li>
+            <li><a href="#" className='Link' onClick={(e) => handleSmoothScroll(e, 'Premiações')}>Premiações</a></li>
+            <li><a href="#" className='Link'onClick={(e) => handleSmoothScroll(e, 'Projeto')}>Projetos</a></li>
 
           </ul>
 
@@ -42,7 +41,7 @@ export default function App() {
 
       </div>
 
-      <div className='part1'>
+      <div id='QS' className='part1'>
 
         <img className='fundo' src="/assets/images/ui.png" alt="" />
 
@@ -89,7 +88,10 @@ export default function App() {
 
       </div>
 
-      <div className="page">
+
+
+
+      <div id='Premiações' className="page">
 
         <div className="card">
 
@@ -97,7 +99,7 @@ export default function App() {
 
           <h3>Premiações</h3>
 
-          <p>
+          <p >
             Na Velox Byte, as premiações refletem a excelência que buscamos. Nossa gestão, focada na inovação, destaca aqueles que se sobressaem, incentivando o progresso. Com líderes qualificados e uma equipe alinhada, celebramos conquistas que reforçam nosso compromisso com o desenvolvimento coletivo.
           </p>
 
@@ -114,11 +116,11 @@ export default function App() {
 
         </div>
 
-        <div className="card">
+        <div id='Projeto' className="card">
 
           <img src="/assets/images/m.png" alt="Projetos" className="card-image" />
 
-          <h3>Projetos</h3>
+          <h3 >Projetos</h3>
 
           <p>
             Na Velox Byte, somos especialistas em desenvolver sites e plataformas sob medida para jovens empreendedores e autônomos, proporcionando soluções que impulsionam seus negócios. Clique no botão abaixo e explore um dos nossos sites de projeto!
