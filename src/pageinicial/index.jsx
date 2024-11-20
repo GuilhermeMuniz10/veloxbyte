@@ -2,12 +2,26 @@ import './index.scss'
 
 export default function App() {
 
+  const handleSmoothScroll = (event, targetId) => {
+    event.preventDefault();  // Impede o comportamento padrão do link (rolagem imediata)
+  
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,  // Obtém a posição vertical da âncora
+        behavior: 'smooth'  // Aplica a rolagem suave
+      });
+    }
+ }
+ 
+
 
   return (
 
     <div className='tudo'>
 
-      <div className="paginicio">
+      <div className="paginicio"> 
 
         <nav className='links'>
 
@@ -15,7 +29,7 @@ export default function App() {
 
           <ul>
 
-            <li><a href="#" className='Link'>Quem Somos</a></li>
+          <li><a href="#" className='Link' onClick={(e) => handleSmoothScroll(e, 'Quw')}>Quem Somos</a></li>
             <li><a href="#" className='Link'>Premiações</a></li>
             <li><a href="#" className='Link'>Projetos</a></li>
             <li><a href="#" className='Link'>Localização</a></li>
@@ -181,12 +195,6 @@ export default function App() {
           </div>
 
         </div>
-
-      </div>
-
-      <div className='mapBox'>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.189356950853!2d-46.70332172578109!3d-23.704931066880288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4fb7e753c599%3A0x6f9ca28fe0093bd2!2sAut%C3%B3dromo%20de%20Interlagos%20-%20Port%C3%A3o%208%20%2F%20Gate%208!5e0!3m2!1spt-BR!2sbr!4v1728855956689!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>
 

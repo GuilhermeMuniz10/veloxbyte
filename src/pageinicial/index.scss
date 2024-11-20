@@ -176,13 +176,14 @@
   display: flex;
   align-items: flex-start;
   background: linear-gradient(to bottom, #ffffff, #6984c3);
-  height: 65.1vh;
+  height: 730px;
 
 
   .ft {
     display: flex;
     align-items: flex-start;
     margin-right: 20px;
+    width: 800px;
   }
 
   .equipe {
@@ -202,6 +203,7 @@
   .missao {
     display: flex;
     flex-direction: column;
+    margin-right: 120px;
     align-items: center;
 
     h3 {
