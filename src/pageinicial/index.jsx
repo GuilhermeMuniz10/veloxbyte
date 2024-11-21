@@ -127,7 +127,12 @@ export default function App() {
           </p>
 
 
-          <button className="card-button">Clique aqui!</button>
+                <button
+        className="card-button"
+        onClick={() => window.location.href = 'http://4.172.207.208:3058/'}
+      >
+        Ir para o servidor
+      </button>
 
         </div>
 
