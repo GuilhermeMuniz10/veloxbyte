@@ -117,6 +117,24 @@
   }
 }
 
+@media (max-width: 480px) {
+  .paginicio .links img {
+     width: 90px;
+     height: 50px;
+     left: 10px;
+     position: absolute;
+     justify-content: space-between;
+  }
+
+  .paginicio .links .Link {
+      display: flex;
+      font-size: 2vw;
+      
+      
+      
+  }
+}
+
 
 
 
@@ -144,6 +162,41 @@
 
     }
   }
+
+
+@media (max-width: 480px) {
+  .texto-secao1 h1 {
+      font-size: 5vw;
+      margin-left: -10%;
+  }
+
+  .texto-secao1 .v{
+    font-size: 5vw;
+    top: 45px;
+    text-align: center;
+    left: -20%;
+  }
+
+  .empre {
+    width: 300px;
+    height: 200px;
+    top:-430px;
+    left: 15%;
+  }
+
+  .fundo{
+    height: 900px;
+   
+  }
+
+  
+
+}
+
+
+
+
+
 
   .texto-secao1,
   p {
